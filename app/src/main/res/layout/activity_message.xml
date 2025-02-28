@@ -5,29 +5,37 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:textAlignment="center"
+    tools:context=".MessageActivity">
 
-    <EditText
-        android:id="@+id/editTextMessage"
+    <TextView
+        android:id="@+id/textViewTitleMessage"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:inputType="text"
-        android:hint="@string/type_your_message"
+        android:text="@string/title_message"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonSendMessage"
+    <TextView
+        android:id="@+id/textViewMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/btn_send_message"
-        android:textAllCaps="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/design_default_color_primary"
+        android:padding="16dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextMessage" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleMessage" />
 </androidx.constraintlayout.widget.ConstraintLayout>

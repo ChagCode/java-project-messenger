@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Messenger</string>
+    <string name="type_your_message">Type your message:</string>
+    <string name="btn_send_message">Send message</string>
+    <string name="title_message">Your message:</string>
+    <string name="massage">Get massage!</string>
 </resources>
